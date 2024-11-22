@@ -2,7 +2,8 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 
-dotenv.config()
+// The dotenv file to init
+dotenv.config();
 
 mongoose.connect(process.env.MONGODB).then (() => {
     console.log("Connected to MongoDB");
